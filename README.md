@@ -32,11 +32,16 @@ In Progress -interpret bytestream
 gcc play.c -lusb-1.0				# I have much to learn about linux :(
 gcc play.c -lusb-1.0 -fno-stack-protector 	# In case of stack smashing canary
 ./a.out
+clear && gcc play.c -lusb-1.0 -fno-stack-protector && ./a.out READ
 
+# Helpful commands
+lsusb
+lsusb -v -d 05ac:12a8
 
 ```
 
 # References
 
 https://www.keil.com/pack/doc/mw/usb/html/_u_s_b__descriptors.html
+
 
